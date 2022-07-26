@@ -85,8 +85,8 @@ function App() {
 
   const clock = () => {
     if (play) {
-      timeout();
       resetTimer();
+      return timeout;
     } else {
       clearTimeout(timeout);
     }
