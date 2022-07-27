@@ -78,8 +78,7 @@ function App() {
     if (!timeLeft && timingType === "Break") {
       setTimeLeft(sessionLength * 60);
       setTimingType("Session");
-      audio.pause();
-      audio.currentTime = 0;
+      audio.play();
     }
   }
 
